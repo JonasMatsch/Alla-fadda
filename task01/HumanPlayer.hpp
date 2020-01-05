@@ -8,5 +8,5 @@ class HumanPlayer : public Player
 	public:
 	int num;
 	HumanPlayer(int num);
-	void play(GameBoard& board);
+	void play(GameBoard* board);
 };

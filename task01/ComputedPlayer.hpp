@@ -11,5 +11,5 @@ class ComputedPlayer : public Player
 	int num;
 	public:
 	ComputedPlayer(int num,int mode);
-	void play(GameBoard& board);
+	void play(GameBoard* board);
 };

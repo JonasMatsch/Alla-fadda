@@ -18,7 +18,7 @@ void GameMaster::start()
 		int exit = 0;
 		while(exit == 0)
 		{
-			gameBoard = GameBoard(1);
+			gameBoard = GameBoard();
 			switch(mode){
 				case 1:	player1 = new HumanPlayer(1);
 						player2 = new HumanPlayer(2);
@@ -41,7 +41,8 @@ void GameMaster::start()
 			}
 			else{
 			std::cout << player1 << endl;
-			player1->play(gameBoard);
+			GameBoard* gb = new GameBoard();
+			player1->play(gb);
 			std::cout << player2 << endl;
 			player2->play(gameBoard);
 			std::cout << gameBoard << endl;

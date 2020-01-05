@@ -2,10 +2,6 @@
 #include <stdio.h>
 #include "GameBoard.hpp"
 
-GameBoard::GameBoard(int num)
-{
-    size = num;
-}
 
 char GameBoard::convert(int player)
 {	

@@ -8,7 +8,6 @@ class GameBoard
 	int size;
 	public:
 	int board[3][3];
-	GameBoard(int num);
 	~GameBoard();
 	void insert(int num1,int num2,int num3);
 	char convert(int player);
